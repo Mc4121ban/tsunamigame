@@ -4,6 +4,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 getgenv().Farm = false
 getgenv().PickUp = false
 getgenv().ShouldRagdoll = false
+--lol
 local Window = Fluent:CreateWindow({
     Title = "Fluent " .. Fluent.Version,
     SubTitle = "by dawid",
