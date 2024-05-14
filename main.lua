@@ -51,7 +51,7 @@ wait(3)
 local tween2 = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(7),{CFrame =CFrame.new(0.88348788, 230.699554, 982.310242, -0.999389589, -0.000123913429, 0.0349354483, -0.000140547054, 0.999999881, -0.000473669439, -0.034935385, -0.000478290371, -0.99938947)})
 tween2:Play()
 tween2.Completed:Wait()
-wait(15)
+wait(60)
         end
     until 
     getgenv().Farm == false
