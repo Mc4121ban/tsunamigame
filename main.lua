@@ -40,18 +40,18 @@ Player.AddToggle("Anti Ragdoll",false,function(v)
 end)
 
 
-AutoFarm.AddToggle("AutoFarm",false,function (v)
+AutoFarm.AddToggle("AutoFarm Win",false,function (v)
     getgenv().Farm = v
     repeat
         if getgenv().Farm == true then
 local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(7),{CFrame =CFrame.new(-9.4971323, 39.9823875, -1051.51807, 0.985789657, -0.00746125402, -0.16781877, -0.00396866864, 0.997699857, -0.0676704049, 0.167937666, 0.0673748031, 0.983492553)})
 tween:Play()
 tween.Completed:Wait()
-wait(1)
+wait(3)
 local tween2 = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(7),{CFrame =CFrame.new(0.88348788, 230.699554, 982.310242, -0.999389589, -0.000123913429, 0.0349354483, -0.000140547054, 0.999999881, -0.000473669439, -0.034935385, -0.000478290371, -0.99938947)})
 tween2:Play()
 tween2.Completed:Wait()
-wait(5)
+wait(15)
         end
     until 
     getgenv().Farm == false
@@ -60,6 +60,7 @@ end)
 AutoFarm.AddToggle("Auto PickUp Coins",false,function (v)
     getgenv().PickUp = v
     repeat
+            task.wait()
       pcall(function ()
             firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"),game:GetService("Workspace").CurrentPointCoins.CoinFolder.CoinCollision,0)
 
