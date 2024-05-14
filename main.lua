@@ -1,5 +1,5 @@
 -- real script make by Executioner(2 years ago)
-local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
+local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/tsunamigame/main/UI.lua"))()
 local MainUI = UILibrary.Load("Tsunami Game")
 local Player = MainUI.AddPage("Player",false)
 local AutoFarm = MainUI.AddPage("AutoFarm",false)
