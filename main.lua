@@ -63,7 +63,7 @@ end)
 AutoFarm.AddToggle("Auto PickUp Coins",false,function (v)
     getgenv().PickUp = v
     repeat
-             wait(0.02)
+             wait(0.1)
       pcall(function ()
             firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"),game:GetService("Workspace").CurrentPointCoins.CoinFolder.CoinCollision,0)
 
